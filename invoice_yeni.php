@@ -9,9 +9,52 @@
     <title>Document</title>
 
     <style>
-    *{
-    font-family:"DeJaVu Sans Mono",monospace !important;
-    margin-top: 3px;
+
+@font-face {
+    font-family: 'Courier New TR';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    src: url("../dompdf/lib/fonts/Courier-New-TR-Regular.ttf") format("truetype");
+  }
+ @font-face {
+    font-family: 'Courier New TR';
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    src: url("../dompdf/lib/fonts/Courier-New-TR-Bold.ttf") format("truetype");
+  }
+ @font-face {
+    font-family: 'Courier New TR';
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    src: url("../dompdf/lib/fonts/Courier-New-TR-Bold-Italic.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'Courier New TR';
+    font-weight: normal;
+    font-style: italic;
+    font-variant: normal;
+    src: url("../dompdf/lib/fonts/Courier-New-TR-Italic.ttf") format("truetype");
+  }
+
+
+  	body{
+    font-family: "Courier New TR" !important;
+	}
+	.bold{
+		font-weight: bold;
+	}
+
+   *{
+
+/*font-family:"DeJaVu Sans Mono",monospace !important;
+
+  font-family: "Courier New TR" !important;
+*/
+  margin-top: 3px !important;
+
     }
 
     .footer{
@@ -61,8 +104,10 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-    		<div class="invoice-title" style="padding-top: 10px;">
-                <img src="https://www.sunucusepeti.com.tr/assets/img/logo.png"><h2 class="pull-right" style="color: green;">ÖDENDI</h2>
+			<div class="invoice-title" style="padding-top: 10px;">
+
+			<img src="https://www.sunucusepeti.com.tr/assets/img/logo.png">
+			<h2 class="pull-right" style="color: green;">ÖDENDI</h2>
     		</div>
     		<hr>
             
@@ -76,11 +121,11 @@
                     <p style="line-height: 5px;">Furkan Sezgin</p>
                     <p style="line-height: 10px;">05357859548</p>
                     <p style="line-height: 10px;">Alsancak mahallesi 25. sokak no: 8 daire: 6</p>
-                    <p style="line-height: 10px;">Bornova / İzmir / Türkiye</p>
+                    <p style="line-height: 5px;">Bornova / İzmir / Türkiye</p>
             </div>
     </div>
     
-
+	<p style="font-family: firefly, DejaVu Sans, sans-serif;">献给母亲的爱</p>
     
     <div class="row">
     	<div class="col-md-12">
@@ -100,90 +145,96 @@
                                 </tr>
     						</thead>
     						<tbody>
-    							<tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
-    							</tr>
                                 <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
                                 </tr>
                                 <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
                                 </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
+								</tr>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
+								</tr>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
+								</tr>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
+								</tr>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
                                 </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
+								</tr>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
+								</tr>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
                                 </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
+								<tr>
+    								<td class="bold">1</td>
+    								<td class="text-center bold">İşçilik</td>
+    								<td class="text-center bold">1</td>
+    								<td class="text-right bold">100.99</td>
                                 </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
-                                </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
-                                </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
-                                </tr>
-                                <tr>
-    								<td>1</td>
-    								<td class="text-center">İşçilik</td>
-    								<td class="text-center">1</td>
-    								<td class="text-right">100.99</td>
-    							</tr>
                                 
     							<tr>
     								<td class="thick-line"></td>
     								<td class="thick-line"></td>
     								<td class="thick-line text-center"><strong>Ara Toplam</strong></td>
-    								<td class="thick-line text-right">$670.99</td>
+    								<td class="thick-line text-right bold">$670.99</td>
     							</tr>
     							<tr>
     								<td class="no-line"></td>
     								<td class="no-line"></td>
     								<td class="no-line text-center" style="line-height: 10px;"><strong>%18 K.D.V.</strong></td>
-    								<td class="no-line text-right" style="line-height: 10px;">0.18</td>
+    								<td class="no-line text-right bold" style="line-height: 10px;">0.18</td>
                                 </tr>    							
                                 <tr>
     								<td class="no-line"></td>
     								<td class="no-line"></td>
     								<td class="no-line text-center" style="line-height: 10px;"><strong>İndirim</strong></td>
-    								<td class="no-line text-right" style="line-height: 10px;">0</td>
+    								<td class="no-line text-right bold" style="line-height: 10px;">0</td>
     							</tr>
     							<tr>
     								<td class="no-line"></td>
     								<td class="no-line"></td>
     								<td class="no-line text-center" style="line-height: 10px;"><strong>Toplam</strong></td>
-    								<td class="no-line text-right" style="line-height: 10px;">685.99 TL</td>
+    								<td class="no-line text-right bold" style="line-height: 10px; color: green;">685.99 TL</td>
     							</tr>
     						</tbody>
     					</table>
@@ -194,7 +245,7 @@
     </div>
 </div>
 
-<div class="footer">
+<div class="footer bold">
     Bu ödeme dekontu sizden ücret alındığının ispatıdır.
 </div>
     

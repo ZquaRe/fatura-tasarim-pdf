@@ -13,7 +13,9 @@ $dompdf = new Dompdf($options);
 
 
 
-$dompdf->loadHtml(file_get_contents('invoice_yeni.php'));
+//$dompdf->loadHtml(file_get_contents('invoice_yeni.php'));
+
+$dompdf->load_html(file_get_contents('invoice_yeni.php'),'UTF-8');
 
 
 //$dompdf->set_base_path(__DIR__);
@@ -32,7 +34,7 @@ $dompdf->render();
 //Sunucuda tutmak istemeyip kullanıcya tarayıcı üzerinden için bu şekilde
 //$dompdf->stream("dompdf_out.pdf", array("Attachment" => false));
 //Sunucuda tutmak istemeyip kullanıcının cihazına indirtmek için bu şekilde kullanınız
-//$dompdf->stream("dompdf_out.pdf", array("Attachment" => true));
+//$dompdf->stream("dompdf_out.pdf", array("Attachment" => false));
 
 //Aşağıda bulunan işlemlerin hepsi pdfi şifrelemek ve şifrelenmiş pdfi açmak için vardır.
 //Veriyi çıktı haline alıyor
